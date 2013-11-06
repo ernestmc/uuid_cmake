@@ -90,6 +90,11 @@
 #include <sys/resource.h>
 #endif
 
+ #ifdef __ANDROID__
+ #include <stdio.h>
+ #include <stdlib.h>
+ #endif
+
 #include "uuidP.h"
 #include "uuidd.h"
 
