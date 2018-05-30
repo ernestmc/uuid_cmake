@@ -461,7 +461,7 @@ static void close_all_fds(void)
 	getrlimit(RLIMIT_NOFILE, &rl);
 	max = rl.rlim_cur;
 #else
-	max = OPEN_MAX;
+	max = FOPEN_MAX;
 #endif
 
 	for (i=0; i < max; i++) {
